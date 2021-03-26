@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+
+  <!-- Custom Remotes -->
+  <remote name="zijianjiao2017" fetch="https://github.com/zijianjiao2017/"/>
+
+  <!-- Device Trees -->
+  <!-- Xiaomi Redmi 9A -->
+  <project path="device/xiaomi/dandelion" name="android_device_xiaomi_dandelion" remote="zijianjiao2017"
+           branch="lineage-17.1"/>
+
+  <!-- Vendor Trees -->
+  <!-- Xiaomi Redmi 9A -->
+  <project path="vendor/xiaomi/dandelion" name="android_vendor_xiaomi_dandelion" remote="zijianjiao2017"
+           branch="lineage-17.1"/>
+
+</manifest>
