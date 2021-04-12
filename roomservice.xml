@@ -7,11 +7,11 @@
   <!-- Device Trees -->
   <!-- Xiaomi Redmi G25 Series -->
   <project path="device/xiaomi/dandelion" name="android_device_xiaomi_dandelion" remote="zijianjiao2017"
-           branch="lineage-17.1"/>
+           branch="lineage-18.1"/>
 
   <!-- Vendor Trees -->
   <!-- Xiaomi Redmi G25 Series -->
   <project path="vendor/xiaomi/dandelion" name="android_vendor_xiaomi_dandelion" remote="zijianjiao2017"
-           branch="lineage-17.1"/>
+           branch="lineage-18.1"/>
 
 </manifest>
