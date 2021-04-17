@@ -1,17 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
 
-  <!-- Custom Remotes -->
-  <remote name="zijianjiao2017" fetch="https://github.com/zijianjiao2017/"/>
+  <!-- Custom remotes -->
+  <remote name="imfatf1sh"
+          fetch="https://github.com/zijianjiao2017/"
+          revision="refs/heads/lineage-18.1" />
 
-  <!-- Device Trees -->
-  <!-- Xiaomi Redmi G25 Series -->
-  <project path="device/xiaomi/dandelion" name="android_device_xiaomi_dandelion" remote="zijianjiao2017"
-           branch="lineage-18.1"/>
+  <remote name="potato"
+          fetch="https://github.com/PotatoProject/"
+          revision="refs/heads/dumaloo-release" />
 
-  <!-- Vendor Trees -->
-  <!-- Xiaomi Redmi G25 Series -->
-  <project path="vendor/xiaomi/dandelion" name="android_vendor_xiaomi_dandelion" remote="zijianjiao2017"
-           branch="lineage-18.1"/>
+  <!-- Sepolicy repos -->
+  <project name="device_mediatek_sepolicy" path="device/mediatek/sepolicy" remote="potato"/>
+
+  <!-- Device repos -->
+  <project name="android_device_xiaomi_dandelion" path="device/xiaomi/dandelion" remote="imfatf1sh"/>
+
+  <!-- Vendor repos -->
+  <project name="android_vendor_xiaomi_dandelion" path="vendor/xiaomi/dandelion" remote="imfatf1sh"/>
 
 </manifest>
