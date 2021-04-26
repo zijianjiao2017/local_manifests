@@ -4,14 +4,15 @@
   <!-- Custom remotes -->
   <remote name="imfatf1sh"
           fetch="https://github.com/zijianjiao2017/"
-          revision="refs/heads/lineage-18.1" />
+          revision="lineage-18.1" />
 
-  <remote name="potato"
-          fetch="https://github.com/PotatoProject/"
-          revision="refs/heads/dumaloo-release" />
+  <remote name="pixel"
+          fetch="https://github.com/PixelExperience"
+          revision="eleven"
+          review="gerrit.pixelexperience.org" />
 
   <!-- Sepolicy repos -->
-  <project name="device_mediatek_sepolicy" path="device/mediatek/sepolicy" remote="potato"/>
+  <project name="device_mediatek_sepolicy" path="device/mediatek/sepolicy" remote="pixel"/>
 
   <!-- Device repos -->
   <project name="android_device_xiaomi_dandelion" path="device/xiaomi/dandelion" remote="imfatf1sh"/>
