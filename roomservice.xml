@@ -5,9 +5,8 @@
   <remote name="imfatf1sh"
           fetch="https://github.com/zijianjiao2017/"
           revision="lineage-18.1" />
-
   <remote name="pixel"
-          fetch="https://github.com/PixelExperience"
+          fetch="https://github.com/PixelExperience/"
           revision="eleven"
           review="gerrit.pixelexperience.org" />
 
@@ -16,6 +15,10 @@
 
   <!-- Device repos -->
   <project name="android_device_xiaomi_dandelion" path="device/xiaomi/dandelion" remote="imfatf1sh"/>
+
+  <!-- MediaTek IMS repos -->
+  <project name="vendor_mediatek_ims" path="vendor/mediatek/ims" remote="imfatf1sh" />
+  <project name="vendor_mediatek_interfaces" path="vendor/mediatek/interfaces" remote="pixel"/>
 
   <!-- Vendor repos -->
   <project name="android_vendor_xiaomi_dandelion" path="vendor/xiaomi/dandelion" remote="imfatf1sh"/>
