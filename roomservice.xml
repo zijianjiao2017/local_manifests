@@ -4,29 +4,13 @@
   <!-- Remotes -->
   <remote name="imfatf1sh"
           fetch="https://github.com/zijianjiao2017/"
-          revision="lineage-18.1" />
-  <remote name="pixel"
-          fetch="https://github.com/PixelExperience/"
-          revision="eleven"
-          review="gerrit.pixelexperience.org" />
-
-  <!-- Ready to replacing these -->
-  <remove-project path="device/lineage/sepolicy" name="crdroidandroid/android_device_crdroid_sepolicy" />
-  <remove-project path="system/sepolicy" name="LineageOS/android_system_sepolicy" />
+          revision="eleven" />
 
   <!-- Sepolicy -->
   <project path="device/mediatek/sepolicy" name="device_mediatek_sepolicy" remote="pixel" />
-  <project path="device/custom/sepolicy" name="device_custom_sepolicy" remote="pixel">
-    <linkfile src="." dest="device/lineage/sepolicy" />
-  </project>
-  <project path="system/sepolicy" name="system_sepolicy" remote="pixel" />
 
   <!-- Device trees -->
   <project path="device/xiaomi/dandelion" name="android_device_xiaomi_dandelion" remote="imfatf1sh" />
-
-  <!-- Extra MTK repos -->
-  <project path="vendor/mediatek/ims" name="vendor_mediatek_ims" remote="imfatf1sh" />
-  <project path="vendor/mediatek/interfaces" name="vendor_mediatek_interfaces" remote="pixel" />
 
   <!-- Vendor trees -->
   <project path="vendor/xiaomi/dandelion" name="android_vendor_xiaomi_dandelion" remote="imfatf1sh" />
